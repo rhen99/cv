@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import me from "../assets/me.png";
 function Navigation({ isOpen }) {
   return (
@@ -8,7 +9,7 @@ function Navigation({ isOpen }) {
     >
       <div className="flex h-1/3 p-3">
         <img
-          className="h-28 w-28 lg:w-40 lg:h-40 m-auto rounded-full"
+          className="h-28 w-28 lg:w-30 lg:h-30 xl:w-40 xl:h-40 m-auto rounded-full"
           src={me}
           alt="my face"
         />
@@ -16,19 +17,28 @@ function Navigation({ isOpen }) {
       <div className="h-3/4">
         <ul className="list-none">
           <li className="hover:bg-cyan-400">
-            <a href="#" className="block px-5 py-3 text-center">
+            <NavLink
+              to="/about"
+              className={`text-slate-800 block px-5 py-3 text-center`}
+            >
               About
-            </a>
+            </NavLink>
           </li>
           <li className="hover:bg-cyan-400">
-            <a href="#" className="block px-5 py-3 text-center">
+            <NavLink
+              to="/projects"
+              className="text-slate-800 block px-5 py-3 text-center"
+            >
               Projects
-            </a>
+            </NavLink>
           </li>
           <li className="hover:bg-cyan-400">
-            <a href="#" className="block px-5 py-3 text-center">
+            <NavLink
+              to="/tutorials"
+              className={`text-slate-800 block px-5 py-3 text-center`}
+            >
               Tutorials
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>

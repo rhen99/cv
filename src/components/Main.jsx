@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 function Main({ setIsOpen, isOpen }) {
   return (
     <div className="w-full">
@@ -18,6 +19,7 @@ function Main({ setIsOpen, isOpen }) {
           </button>
         )}
       </div>
+      <Outlet />
     </div>
   );
 }
