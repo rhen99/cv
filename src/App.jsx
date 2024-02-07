@@ -12,7 +12,7 @@ export default function App() {
   } else {
     return (
       <Container>
-        <Navigation isOpen={isOpen} />
+        <Navigation isOpen={isOpen} setIsOpen={setIsOpen} />
         <Main setIsOpen={setIsOpen} isOpen={isOpen} />
       </Container>
     );
