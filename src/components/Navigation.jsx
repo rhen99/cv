@@ -7,9 +7,9 @@ function Navigation({ isOpen }) {
         !isOpen ? "-translate-x-full" : ""
       } lg:w-4/12 lg:static lg:translate-x-0 xl:w-2/12 xl:static`}
     >
-      <div className="flex h-1/3 p-3">
+      <div className="flex h-1/4 p-5">
         <img
-          className="h-28 w-28 lg:w-30 lg:h-30 xl:w-40 xl:h-40 m-auto rounded-full"
+          className="h-20 w-20 lg:w-30 lg:h-30 xl:w-40 xl:h-40 m-auto rounded-full"
           src={me}
           alt="my face"
         />
@@ -19,7 +19,13 @@ function Navigation({ isOpen }) {
           <li className="hover:bg-cyan-400">
             <NavLink
               to="/about"
-              className={`text-slate-800 block px-5 py-3 text-center`}
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "text-slate-800 block px-5 py-3 text-center"
+                  : isActive
+                  ? "bg-cyan-400 border-l-4 border-blue-800 text-slate-800 block px-5 py-3 text-center"
+                  : "text-slate-800 block px-5 py-3 text-center"
+              }
             >
               About
             </NavLink>
@@ -27,7 +33,13 @@ function Navigation({ isOpen }) {
           <li className="hover:bg-cyan-400">
             <NavLink
               to="/projects"
-              className="text-slate-800 block px-5 py-3 text-center"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "text-slate-800 block px-5 py-3 text-center"
+                  : isActive
+                  ? "bg-cyan-400 border-l-4 border-blue-800 text-slate-800 block px-5 py-3 text-center"
+                  : "text-slate-800 block px-5 py-3 text-center"
+              }
             >
               Projects
             </NavLink>
@@ -35,7 +47,13 @@ function Navigation({ isOpen }) {
           <li className="hover:bg-cyan-400">
             <NavLink
               to="/tutorials"
-              className={`text-slate-800 block px-5 py-3 text-center`}
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "text-slate-800 block px-5 py-3 text-center"
+                  : isActive
+                  ? "bg-cyan-400 border-l-4 border-blue-800 text-slate-800 block px-5 py-3 text-center"
+                  : "text-slate-800 block px-5 py-3 text-center"
+              }
             >
               Tutorials
             </NavLink>
