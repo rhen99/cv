@@ -2,7 +2,9 @@ function About() {
   return (
     <main className="text-center lg:text-start lg:w-3/4">
       <section className="py-10 min-h-96">
-        <h1 className="text-3xl font-bold pb-5">Who Am I</h1>
+        <h1 className="text-3xl lg:text-5xl lg:pb-10 font-bold pb-5">
+          Who Am I
+        </h1>
         <p className="text-2xl leading-relaxed">
           Hey there! I'm Arhen. I rolled into coding to make myself hirable
           inspite of my physical condition. I can certainly say that I'm lucky
@@ -14,7 +16,9 @@ function About() {
         </p>
       </section>
       <section className="py-10 min-h-96">
-        <h1 className="text-3xl font-bold pb-5">The Purpose Of This Site</h1>
+        <h1 className="text-3xl lg:text-5xl lg:pb-10 font-bold pb-5">
+          The Purpose Of This Site
+        </h1>
         <p className=" text-2xl leading-relaxed">
           This is gonna be my little corner of the web! I thought of this as my
           substitute for a typical resume/CV since that can be limited and
@@ -25,11 +29,15 @@ function About() {
         </p>
       </section>
       <section className="py-10 min-h-96">
-        <h1 className="text-3xl font-bold pb-5">Best Videos</h1>
+        <h1 className="text-3xl lg:text-5xl lg:pb-10 font-bold pb-5">
+          Best Videos
+        </h1>
         <div className="min-h-40"></div>
       </section>
       <section className="py-10 min-h-96">
-        <h1 className="text-3xl font-bold pb-5">Project Showcase</h1>
+        <h1 className="text-3xl lg:text-5xl lg:pb-10 font-bold pb-5">
+          Project Showcase
+        </h1>
         <div className="min-h-40"></div>
       </section>
     </main>

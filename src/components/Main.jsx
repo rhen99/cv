@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 function Main({ setIsOpen, isOpen }) {
   return (
-    <div className="w-full px-8 overflow-y-scroll">
+    <div className="w-full px-8 pt-10 overflow-y-scroll">
       <div className="text-right px-7 py-4">
         {!isOpen ? (
           <button
