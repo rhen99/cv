@@ -1,3 +1,6 @@
+import Project1 from "../assets/Project1.png";
+import Project2 from "../assets/Project2.png";
+import Project3 from "../assets/Project3.png";
 import { useEffect, useState } from "react";
 function Projects() {
   const [repos, setRepos] = useState([]);
@@ -15,11 +18,90 @@ function Projects() {
         <h1 className="text-3xl lg:text-5xl lg:pb-10 font-bold">
           Featured Projects
         </h1>
+        <p className="text-2xl pb-8">Here's where the big boys are gonna go.</p>
       </section>
       <section className="py-10 min-h-96">
         <h1 className="text-3xl lg:text-5xl lg:pb-10 font-bold">
           Deployed Projects
         </h1>
+        <p className="text-2xl pb-8">Here are some of my deployed projects.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 pt-5 lg:pt-0 text-start">
+          <div className="border border-slate-500 rounded p-5">
+            <div
+              className="h-60 bg-slate-300 bg-center bg-cover bg-no-repeat border border-slate-500 rounded"
+              style={{
+                backgroundImage: `url("${Project1}")`,
+              }}
+            ></div>
+            <a
+              href="https://passwordkeeper.netlify.app/"
+              className="underline hover:text-blue-600"
+            >
+              <h1 className="text-2xl font-bold pt-5">Password Keeper</h1>
+            </a>
+
+            <p className="text-lg leading-relaxed">
+              This is an app where you can save your passwords. It doesn't store
+              it anywhere but your browser.
+            </p>
+            <a
+              href="https://github.com/rhen99/pwd-keeper"
+              className="underline font-bold hover:text-blue-600"
+            >
+              View Repository
+            </a>
+          </div>
+          <div className="border border-slate-500 rounded p-5">
+            <div
+              className="h-60 bg-slate-300 bg-center bg-cover bg-no-repeat border border-slate-500 rounded"
+              style={{
+                backgroundImage: `url("${Project2}")`,
+              }}
+            ></div>
+            <a
+              href="https://vuepolling.netlify.app/"
+              className="underline hover:text-blue-600"
+            >
+              <h1 className="text-2xl font-bold pt-5">Polling App</h1>
+            </a>
+
+            <p className="text-lg leading-relaxed">
+              It's a polling web app where a user can create an account using
+              Google OAuth and make polls that anybody can vote on.
+            </p>
+            <a
+              href="https://github.com/rhen99/Polling-App"
+              className="underline font-bold hover:text-blue-600"
+            >
+              View Repository
+            </a>
+          </div>
+          <div className="border border-slate-500 rounded p-5">
+            <div
+              className="h-60 bg-slate-300 bg-center bg-cover bg-no-repeat border border-slate-500 rounded"
+              style={{
+                backgroundImage: `url("${Project3}")`,
+              }}
+            ></div>
+            <a
+              href="https://lagsvanillajstodolist.netlify.app/"
+              className="underline hover:text-blue-600"
+            >
+              <h1 className="text-2xl font-bold pt-5">Daily Notes</h1>
+            </a>
+
+            <p className="text-lg leading-relaxed">
+              A notes web app where a user can add their daily schedule together
+              with the time of day.
+            </p>
+            <a
+              href="https://github.com/rhen99/Todo-List-With-JavaScript-2022"
+              className="underline font-bold hover:text-blue-600"
+            >
+              View Repository
+            </a>
+          </div>
+        </div>
       </section>
       <section className="py-10 min-h-96">
         <h1 className="text-3xl lg:text-5xl lg:pb-10 font-bold">
