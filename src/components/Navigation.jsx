@@ -3,7 +3,7 @@ import me from "../assets/me.png";
 function Navigation({ isOpen, setIsOpen }) {
   return (
     <div
-      className={`transition-transform duration-500 z-10 bg-cyan-300 fixed w-2/4 h-dvh ${
+      className={`transition-transform duration-500 z-10 bg-blue-800 fixed w-2/4 h-dvh ${
         !isOpen ? "-translate-x-full" : ""
       } lg:w-4/12 lg:static lg:translate-x-0 xl:w-2/12 xl:static`}
     >
@@ -14,50 +14,54 @@ function Navigation({ isOpen, setIsOpen }) {
           alt="my face"
         />
       </div>
-      <h1 className="text-center py-1 font-bold text-xl">Arhen Santiago</h1>
-      <p className="text-center text-sm">arhensantiago9900@gmail.com</p>
+      <h1 className="text-center py-1 font-bold text-xl text-white">
+        Arhen Santiago
+      </h1>
+      <p className="text-center text-sm text-white">
+        arhensantiago9900@gmail.com
+      </p>
       <div>
         <ul className="list-none pt-4 lg:pt-2">
-          <li className="hover:bg-cyan-400">
+          <li className="hover:bg-blue-900">
             <NavLink
               to="/projects"
               onClick={() => setIsOpen(false)}
               className={({ isActive, isPending }) =>
                 isPending
-                  ? "text-slate-800 block px-5 py-3 text-center"
+                  ? "text-white block px-5 py-3 text-center"
                   : isActive
-                  ? "bg-cyan-400 border-l-4 border-blue-800 text-slate-800 block px-5 py-3 text-center"
-                  : "text-slate-800 block px-5 py-3 text-center"
+                  ? "bg-blue-900 border-l-4 border-white text-white block px-5 py-3 text-center"
+                  : "text-white block px-5 py-3 text-center"
               }
             >
               Projects
             </NavLink>
           </li>
-          <li className="hover:bg-cyan-400">
+          <li className="hover:bg-blue-900">
             <NavLink
               onClick={() => setIsOpen(false)}
               to="/tutorials"
               className={({ isActive, isPending }) =>
                 isPending
-                  ? "text-slate-800 block px-5 py-3 text-center"
+                  ? "text-white block px-5 py-3 text-center"
                   : isActive
-                  ? "bg-cyan-400 border-l-4 border-blue-800 text-slate-800 block px-5 py-3 text-center"
-                  : "text-slate-800 block px-5 py-3 text-center"
+                  ? "bg-blue-900 border-l-4 border-white text-white block px-5 py-3 text-center"
+                  : "text-white block px-5 py-3 text-center"
               }
             >
               Tutorials
             </NavLink>
           </li>
-          <li className="hover:bg-cyan-400">
+          <li className="hover:bg-blue-900">
             <NavLink
               onClick={() => setIsOpen(false)}
               to="/about"
               className={({ isActive, isPending }) =>
                 isPending
-                  ? "text-slate-800 block px-5 py-3 text-center"
+                  ? "text-white block px-5 py-3 text-center"
                   : isActive
-                  ? "bg-cyan-400 border-l-4 border-blue-800 text-slate-800 block px-5 py-3 text-center"
-                  : "text-slate-800 block px-5 py-3 text-center"
+                  ? "bg-blue-900 border-l-4 border-white text-white block px-5 py-3 text-center"
+                  : "text-white block px-5 py-3 text-center"
               }
             >
               About
@@ -68,5 +72,4 @@ function Navigation({ isOpen, setIsOpen }) {
     </div>
   );
 }
-
 export default Navigation;

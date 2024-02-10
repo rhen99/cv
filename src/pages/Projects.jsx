@@ -19,6 +19,11 @@ function Projects() {
           Featured Projects
         </h1>
         <p className="text-2xl pb-8">Here's where the big boys are gonna go.</p>
+        <div className="min-h-40">
+          <h3 className="text-xl font-bold bg-yellow-100 border px-10 py-5 rounded text-start">
+            Coming Soon
+          </h3>
+        </div>
       </section>
       <section className="py-10 min-h-96">
         <h1 className="text-3xl lg:text-5xl lg:pb-10 font-bold">

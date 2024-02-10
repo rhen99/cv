@@ -32,13 +32,21 @@ function About() {
         <h1 className="text-3xl lg:text-5xl lg:pb-10 font-bold pb-5">
           Best Videos
         </h1>
-        <div className="min-h-40"></div>
+        <div className="min-h-40">
+          <h3 className="text-xl font-bold bg-yellow-100 border px-10 py-5 rounded">
+            Coming Soon
+          </h3>
+        </div>
       </section>
       <section className="py-10 min-h-96">
         <h1 className="text-3xl lg:text-5xl lg:pb-10 font-bold pb-5">
           Project Showcase
         </h1>
-        <div className="min-h-40"></div>
+        <div className="min-h-40">
+          <h3 className="text-xl font-bold bg-yellow-100 border px-10 py-5 rounded">
+            Coming Soon
+          </h3>
+        </div>
       </section>
     </main>
   );
